@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  angp:
+    container_name: angp
+    build: .
+    volumes:
+      - '/app/node_modules'
+      - '.:/app'
+    ports:
+      - '8000:4200'
+      - '49153:49153'
